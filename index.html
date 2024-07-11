@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/app.js" type="module"></script>
+</head>
+<body> 
+    <header>
+        <h1>LEARN & BUILD PARKING SYSTEM</h1>
+    </header>
+    <main>
+        <form class="user">
+        <h2>User Registration</h2>
+        <input id="name" type="text" placeholder="Name *" required />
+        <input id="contact" type="text" placeholder="Contact *" required pattern = "[0-9]{10}" />
+        <select id="role" class="roles">
+            <option disabled selected>--Select--</option>
+            <option value="learner">Learner</option>
+            <option value="faculty">Faculty</option>
+        </select>
+        <input type="submit" value="Register" id="saveUserBtn"  />
+        </form>
+
+        <form class="vehicle">
+            <h2>Vehicle Registration</h2>
+            <input id="idVehicle" class="text" type="digits" placeholder="Registration Id*" required />
+            <select id="roleVehicle" class="type">
+                <option disabled selected>--Select Vehicle--</option>
+                <option value="cycle">Cycle</option>
+                <option value="bike">Bike</option>
+                <option value="car">Car</option>
+            </select>
+            <input type="submit" id="saveVehicleBtn" value="Register" />
+        </form>
+    
+        <form class="pass-choice">
+            <h2>Pass Choice</h2>
+    
+        </form>
+        <section class="ticket">
+
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; 2024 | All Rights Reserved
+    </footer>
+</body>
+</html>
